@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="overlay"></div>
+      <header>
+        <a href="#" class="logo">Fitness Freak.</a>
+        <div class="toggleMenu active" onclick="toggleMenu()"></div>
+        <ul class="navigation active">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Trainers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="contentBx">
+          <h2>Build Perfect Body With Clean Mind!</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ab
+            reprehenderit cupiditate deserunt, quo eveniet incidunt veritatis?
+            Tempora ipsum dignissimos necessitatibus, dolore saepe iusto nostrum
+            ad! Nihil, ipsam consequatur. Praesentium?
+          </p>
+          <a href="#">Get Started ></a>
+        </div>
+      </div>
+
+      <ul class="sci">
+        <li>
+          <a href="https://twitter.com/home"
+            ><img src="./logos/twitter.png"
+          /></a>
+          <a href="https://www.instagram.com/accounts/login/?hl=en"
+            ><img src="./logos/instagram-logo (1).png"
+          /></a>
+          <a href="https://github.com/Saiyadsg"
+            ><img src="./logos/github.png"
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+      function toggleMenu() {
+        const toggleMenu = document.querySelector(".toggleMenu");
+        const navigation = document.querySelector(".navigation");
+        toggleMenu.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
